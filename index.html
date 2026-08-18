@@ -10,7 +10,7 @@
     html { scroll-behavior: smooth; }
     body {
       font-family: Arial, Helvetica, sans-serif;
-      background: #080b14;
+      background: #17130d;
       color: #fff;
       min-height: 100vh;
     }
@@ -22,37 +22,40 @@
       text-align: center;
       padding: 40px 20px;
       background:
-        radial-gradient(circle at 20% 20%, rgba(91, 80, 255, .35), transparent 35%),
-        radial-gradient(circle at 80% 70%, rgba(0, 210, 255, .2), transparent 35%),
-        linear-gradient(135deg, #0b1020, #11182d 55%, #090d18);
+        linear-gradient(rgba(15, 12, 7, .28), rgba(15, 12, 7, .58)),
+        radial-gradient(circle at 50% 15%, rgba(224, 164, 61, .28), transparent 38%),
+        linear-gradient(180deg, #403523 0%, #211b14 48%, #0d0b08 100%);
     }
     .card {
       max-width: 900px;
       padding: 55px 35px;
       border: 1px solid rgba(255,255,255,.12);
       border-radius: 28px;
-      background: rgba(255,255,255,.055);
-      backdrop-filter: blur(14px);
-      box-shadow: 0 25px 80px rgba(0,0,0,.4);
+      background: rgba(22, 18, 12, .78);
+      backdrop-filter: blur(10px);
+      box-shadow: 0 25px 80px rgba(0,0,0,.65);
+      border-color: rgba(225, 171, 76, .28);
     }
     .badge {
       display: inline-block;
       padding: 8px 15px;
       border-radius: 999px;
-      background: rgba(120,100,255,.18);
-      border: 1px solid rgba(150,140,255,.3);
-      color: #cfcaff;
+      background: rgba(191, 137, 43, .18);
+      border: 1px solid rgba(225, 171, 76, .35);
+      color: #f2c66d;
       font-weight: 700;
       margin-bottom: 22px;
     }
     h1 {
       font-size: clamp(2.5rem, 7vw, 5.8rem);
       line-height: .95;
-      letter-spacing: -3px;
+      letter-spacing: -2px;
       margin-bottom: 18px;
+      text-transform: uppercase;
+      text-shadow: 4px 5px 0 rgba(0,0,0,.45);
     }
     .gradient {
-      background: linear-gradient(90deg, #fff, #9c8cff, #5ee7ff);
+      background: linear-gradient(90deg, #fff3cf, #e6b95f, #a86b24);
       -webkit-background-clip: text;
       background-clip: text;
       color: transparent;
@@ -99,7 +102,7 @@
     section {
       padding: 80px 20px;
       text-align: center;
-      background: #090d18;
+      background: #0d0b08;
     }
     .grid {
       max-width: 1050px;
@@ -111,13 +114,14 @@
     .feature {
       padding: 28px;
       border-radius: 20px;
-      background: #101626;
+      background: linear-gradient(145deg, #1d1810, #12100b);
+      border-color: rgba(225, 171, 76, .16);
       border: 1px solid rgba(255,255,255,.08);
     }
     .feature h3 { margin-bottom: 9px; }
     .feature p { color: #9fa8bd; line-height: 1.5; }
     .soon {
-      color: #8f84ff;
+      color: #e4ae4e;
       font-weight: 800;
       margin-top: 10px;
     }
@@ -125,7 +129,7 @@
       padding: 28px 20px;
       text-align: center;
       color: #737c91;
-      background: #060811;
+      background: #080705;
       font-size: .9rem;
     }
   </style>
@@ -134,13 +138,16 @@
 
   <main class="hero">
     <div class="card">
+      <div style="font-size:.78rem;letter-spacing:3px;color:#d8aa56;margin-bottom:14px;font-weight:800;">
+        MASDENVERGE COUNTY • 2027
+      </div>
       <div class="badge">🎮 Juego en desarrollo</div>
 
       <h1><span class="gradient">Grand Town<br>Masdenverge</span></h1>
 
       <p class="subtitle">
-        Una nueva aventura creada por <strong>Aidan y Dan</strong>.
-        Prepárate para descubrir Grand Town Masdenverge.
+        Explora las calles, descubre sus secretos y vive tu propia historia en un pequeño pueblo de mundo abierto.
+        Un proyecto creado por <strong>Aidan y Dan</strong>.
       </p>
 
       <div class="buttons">
@@ -174,8 +181,11 @@
 
       <div class="feature">
         <h3>💰 Donaciones</h3>
-        <p>Próximamente estará disponible la página de donaciones.</p>
-        <div class="soon">mañana lol</div>
+        <p>¡Ya puedes apoyar el desarrollo de Grand Town Masdenverge!</p>
+        
+        <a class="btn discord" style="margin-top:16px;" href="https://paypal.me/mayte295271" target="_blank" rel="noopener noreferrer">
+          💸 Donar por PayPal
+        </a>
       </div>
     </div>
   </section>
