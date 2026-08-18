@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grand Town Masdenverge</title>
+  <meta name="description" content="Grand Town Masdenverge — un juego creado por Aidan y Dan. Planeado para 2027.">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #080b14;
+      color: #fff;
+      min-height: 100vh;
+    }
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 40px 20px;
+      background:
+        radial-gradient(circle at 20% 20%, rgba(91, 80, 255, .35), transparent 35%),
+        radial-gradient(circle at 80% 70%, rgba(0, 210, 255, .2), transparent 35%),
+        linear-gradient(135deg, #0b1020, #11182d 55%, #090d18);
+    }
+    .card {
+      max-width: 900px;
+      padding: 55px 35px;
+      border: 1px solid rgba(255,255,255,.12);
+      border-radius: 28px;
+      background: rgba(255,255,255,.055);
+      backdrop-filter: blur(14px);
+      box-shadow: 0 25px 80px rgba(0,0,0,.4);
+    }
+    .badge {
+      display: inline-block;
+      padding: 8px 15px;
+      border-radius: 999px;
+      background: rgba(120,100,255,.18);
+      border: 1px solid rgba(150,140,255,.3);
+      color: #cfcaff;
+      font-weight: 700;
+      margin-bottom: 22px;
+    }
+    h1 {
+      font-size: clamp(2.5rem, 7vw, 5.8rem);
+      line-height: .95;
+      letter-spacing: -3px;
+      margin-bottom: 18px;
+    }
+    .gradient {
+      background: linear-gradient(90deg, #fff, #9c8cff, #5ee7ff);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+    .subtitle {
+      font-size: clamp(1rem, 2vw, 1.35rem);
+      color: #c5cada;
+      line-height: 1.6;
+      margin: 0 auto 30px;
+      max-width: 680px;
+    }
+    .buttons {
+      display: flex;
+      gap: 14px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 14px 21px;
+      border-radius: 13px;
+      text-decoration: none;
+      font-weight: 800;
+      transition: .2s ease;
+    }
+    .btn:hover { transform: translateY(-3px); }
+    .discord {
+      background: #5865F2;
+      color: white;
+      box-shadow: 0 10px 30px rgba(88,101,242,.3);
+    }
+    .info {
+      background: rgba(255,255,255,.08);
+      color: #fff;
+      border: 1px solid rgba(255,255,255,.13);
+    }
+    .discord-icon {
+      width: 23px;
+      height: 23px;
+      fill: currentColor;
+    }
+    section {
+      padding: 80px 20px;
+      text-align: center;
+      background: #090d18;
+    }
+    .grid {
+      max-width: 1050px;
+      margin: 35px auto 0;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 18px;
+    }
+    .feature {
+      padding: 28px;
+      border-radius: 20px;
+      background: #101626;
+      border: 1px solid rgba(255,255,255,.08);
+    }
+    .feature h3 { margin-bottom: 9px; }
+    .feature p { color: #9fa8bd; line-height: 1.5; }
+    .soon {
+      color: #8f84ff;
+      font-weight: 800;
+      margin-top: 10px;
+    }
+    footer {
+      padding: 28px 20px;
+      text-align: center;
+      color: #737c91;
+      background: #060811;
+      font-size: .9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <main class="hero">
+    <div class="card">
+      <div class="badge">🎮 Juego en desarrollo</div>
+
+      <h1><span class="gradient">Grand Town<br>Masdenverge</span></h1>
+
+      <p class="subtitle">
+        Una nueva aventura creada por <strong>Aidan y Dan</strong>.
+        Prepárate para descubrir Grand Town Masdenverge.
+      </p>
+
+      <div class="buttons">
+        <a class="btn discord" href="https://discord.gg/D2ABb7NG6y" target="_blank" rel="noopener noreferrer">
+          <svg class="discord-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M19.54 5.34A16.8 16.8 0 0 0 15.4 4l-.5 1.02a15.1 15.1 0 0 0-5.8 0L8.6 4a16.8 16.8 0 0 0-4.14 1.34C1.84 9.5 1.13 13.56 1.48 17.56A16.7 16.7 0 0 0 6.57 20l1.23-1.67c-.68-.25-1.32-.57-1.92-.94l.47-.36c3.7 1.72 7.7 1.72 11.35 0l.48.36c-.6.37-1.24.69-1.92.94L17.49 20a16.7 16.7 0 0 0 5.09-2.44c.42-4.64-.71-8.66-3.04-12.22ZM8.5 15.22c-1.1 0-2-.99-2-2.2s.88-2.2 2-2.2c1.13 0 2.01.99 2 2.2 0 1.21-.88 2.2-2 2.2Zm7 0c-1.1 0-2-.99-2-2.2s.88-2.2 2-2.2c1.13 0 2.01.99 2 2.2 0 1.21-.88 2.2-2 2.2Z"/>
+          </svg>
+          Únete al Discord
+        </a>
+        <a class="btn info" href="#info">Más información ↓</a>
+      </div>
+    </div>
+  </main>
+
+  <section id="info">
+    <h2>🚧 Grand Town Masdenverge</h2>
+    <p class="subtitle">El proyecto está en desarrollo. ¡Más novedades próximamente!</p>
+
+    <div class="grid">
+      <div class="feature">
+        <h3>📅 Lanzamiento</h3>
+        <p>El juego está planeado para</p>
+        <div class="soon">2027</div>
+      </div>
+
+      <div class="feature">
+        <h3>👥 Creadores</h3>
+        <p>Creado por</p>
+        <div class="soon">Aidan &amp; Dan</div>
+      </div>
+
+      <div class="feature">
+        <h3>💰 Donaciones</h3>
+        <p>Próximamente estará disponible la página de donaciones.</p>
+        <div class="soon">mañana lol</div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    © 2026 Grand Town Masdenverge · Creado por Aidan y Dan
+  </footer>
+
+</body>
+</html>
